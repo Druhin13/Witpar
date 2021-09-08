@@ -161,6 +161,7 @@ h1 {
   flex: 0 0 auto;
   border-top: 1px solid #101010;
   border-bottom: 1px solid #101010;
+  text-decoration: none;
 }
 
 .lottie-animation {
@@ -187,11 +188,20 @@ h1 {
   height: 0px;
 }
 
-.section-2 {
-  position: static;
+.section2 {
+  position: relative;
+  z-index: 5;
   width: 100vw;
-  height: 300vh;
+  height: 400vh;
   background-color: #101010;
+}
+
+.smooth-scroll-wrapper {
+  background-color: #101010;
+}
+
+.smooth-scroll-embed {
+  display: none;
 }
 
 .line-bar {
@@ -421,6 +431,7 @@ h1 {
   flex: 0 0 auto;
   border-top: 1px solid #cbcbcb;
   border-bottom: 1px solid #cbcbcb;
+  text-decoration: none;
 }
 
 .lottie-animation2 {
