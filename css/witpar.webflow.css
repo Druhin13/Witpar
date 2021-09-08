@@ -221,19 +221,21 @@ h1 {
 }
 
 .paragraph-holder {
-  width: 28.65vw;
+  width: 24vw;
 }
 
 .paragraph-text {
-  opacity: 0.9;
+  opacity: 0.85;
+  font-family: Helv, sans-serif;
   color: #cbcbcb;
-  font-size: 1.19vw;
-  line-height: 0.95;
-  letter-spacing: -0.0357vw;
+  font-size: 1vw;
+  line-height: 1;
+  font-weight: 300;
+  letter-spacing: -0.03vw;
 }
 
 .paragraph-text.top {
-  padding-top: 1.65vh;
+  padding-top: 2vh;
 }
 
 .line {
@@ -247,6 +249,10 @@ h1 {
 }
 
 .section-title {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
   color: #cbcbcb;
   font-size: 6.25vw;
   line-height: 0.95;
@@ -261,10 +267,46 @@ h1 {
   opacity: 0.5;
 }
 
+.div-block-5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.lottie-animation-2 {
+  width: 10vw;
+  margin-top: 4vh;
+  clear: left;
+}
+
+.div-block-6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
 @font-face {
   font-family: 'Helveticaneue';
   src: url('../fonts/HelveticaNeue.woff2') format('woff2');
   font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Helv';
+  src: url('../fonts/helv-light.TTF') format('truetype');
+  font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
