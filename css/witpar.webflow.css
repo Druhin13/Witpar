@@ -25,7 +25,7 @@ h1 {
 }
 
 .body {
-  background-color: #000;
+  background-color: #101010;
   font-family: Helveticaneue, sans-serif;
   color: #101010;
   font-size: 0.9vw;
@@ -35,6 +35,7 @@ h1 {
 
 .menu-bar {
   position: fixed;
+  z-index: 100;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -181,7 +182,7 @@ h1 {
 .section-2 {
   position: relative;
   width: 100vw;
-  height: 200vh;
+  height: auto;
   background-color: #101010;
 }
 
@@ -294,6 +295,13 @@ h1 {
   -webkit-justify-content: flex-end;
   -ms-flex-pack: end;
   justify-content: flex-end;
+}
+
+.section-3 {
+  position: relative;
+  width: 100vw;
+  height: auto;
+  background-color: #101010;
 }
 
 @font-face {
