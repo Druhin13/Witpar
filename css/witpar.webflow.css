@@ -439,6 +439,303 @@ h1 {
   margin-left: 0.75vw;
 }
 
+.mobile-menu {
+  display: none;
+}
+
+@media screen and (max-width: 991px) {
+  .menu-bar {
+    width: 92vw;
+    height: 10vh;
+    margin-right: 4vw;
+    margin-left: 4vw;
+  }
+
+  .menu-logo {
+    width: 10vw;
+  }
+
+  .link-block {
+    font-size: 1.4vw;
+    letter-spacing: -0.042vw;
+  }
+
+  .link-block.scroll-down {
+    padding-top: 1.5vh;
+    padding-bottom: 1.5vh;
+  }
+
+  .link-block.view-profile {
+    padding-top: 1.5vh;
+    padding-bottom: 1.5vh;
+  }
+
+  .video-holder {
+    width: 92vw;
+    height: 60vh;
+    margin-right: 4vw;
+    margin-left: 4vw;
+    border-radius: 2vw;
+  }
+
+  .background-video {
+    border-radius: 2vw;
+  }
+
+  .title-holder {
+    margin-right: 4vw;
+    margin-left: 4vw;
+  }
+
+  .heading {
+    font-size: 4.5vw;
+  }
+
+  .button {
+    width: 28vw;
+  }
+
+  .lottie-animation {
+    height: 1vh;
+  }
+
+  .paragraph-holder {
+    width: 39vw;
+  }
+
+  .paragraph-text {
+    font-size: 1.6vw;
+    letter-spacing: -0.048vw;
+  }
+
+  .paragraph-text.top {
+    padding-top: 1.5vh;
+    font-size: 1.6vw;
+    letter-spacing: -0.048vw;
+  }
+
+  .line {
+    margin-top: 6.5vh;
+    margin-bottom: 6.5vh;
+  }
+
+  .section-title {
+    font-size: 7.5vw;
+  }
+
+  .paragraph-text2 {
+    font-size: 1.45vw;
+    letter-spacing: -0.045vw;
+  }
+
+  .paragraph-heading {
+    font-size: 1.45vw;
+    letter-spacing: -0.0435vw;
+  }
+
+  .member-card {
+    margin-top: 7.5vh;
+  }
+
+  .member-card.top {
+    margin-top: 5vh;
+  }
+
+  .paragraph-heading2 {
+    font-size: 1.45vw;
+    letter-spacing: -0.0435vw;
+  }
+
+  .paragraph-heading3 {
+    font-size: 1.45vw;
+    letter-spacing: -0.0435vw;
+  }
+
+  .lottie-animation2 {
+    height: 1vh;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .menu-bar {
+    width: 90vw;
+    margin-right: 5vw;
+    margin-left: 5vw;
+    padding-bottom: 1vh;
+  }
+
+  .menu-logo {
+    width: 22vw;
+  }
+
+  .link-block {
+    font-size: 3vw;
+  }
+
+  .link-block.scroll-down {
+    padding-top: 1.75vh;
+    padding-bottom: 1.75vh;
+  }
+
+  .link-block.view-profile {
+    padding-top: 1.75vh;
+    padding-bottom: 1.75vh;
+  }
+
+  .video-holder {
+    width: 90vw;
+    height: 60vh;
+    margin-top: 15vh;
+    margin-right: 5vw;
+    margin-left: 5vw;
+    border-radius: 5vw;
+  }
+
+  .background-video {
+    border-radius: 5vw;
+  }
+
+  .title-holder {
+    margin-top: 5vh;
+    margin-right: 5vw;
+    margin-left: 5vw;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .heading {
+    font-size: 6.5vw;
+    letter-spacing: -0.195vw;
+  }
+
+  .button {
+    width: 100%;
+    margin-top: 3vh;
+  }
+
+  .line-bar {
+    width: 90vw;
+    height: 7.5vh;
+    margin-right: 5vw;
+    margin-left: 5vw;
+  }
+
+  .content-section {
+    margin-top: 5vh;
+    margin-right: 5vw;
+    margin-left: 5vw;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -webkit-flex-direction: column-reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+    -webkit-box-align: stretch;
+    -webkit-align-items: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+  }
+
+  .paragraph-holder {
+    width: 90vw;
+    margin-top: 4.5vh;
+  }
+
+  .paragraph-text {
+    font-size: 3.75vw;
+    letter-spacing: -0.1125vw;
+  }
+
+  .paragraph-text.top {
+    padding-top: 0vh;
+    font-size: 3.75vw;
+    letter-spacing: -0.1125vw;
+  }
+
+  .line {
+    margin-top: 6vh;
+    margin-bottom: 7.5vh;
+  }
+
+  .section-title {
+    font-size: 11.5vw;
+    text-align: left;
+  }
+
+  .lottie-animation-2 {
+    display: none;
+    width: 15vw;
+    margin-top: 5.5vh;
+  }
+
+  .div-block-6 {
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+
+  .paragraph-text2 {
+    font-size: 3.3vw;
+    letter-spacing: -0.099vw;
+  }
+
+  .paragraph-heading {
+    font-size: 3.3vw;
+    letter-spacing: -0.099vw;
+  }
+
+  .member-card {
+    margin-top: 8vh;
+  }
+
+  .member-card.top {
+    margin-top: 6vh;
+  }
+
+  .paragraph-heading2 {
+    font-size: 3.3vw;
+    letter-spacing: -0.099vw;
+  }
+
+  .paragraph-heading3 {
+    font-size: 3.3vw;
+    letter-spacing: -0.099vw;
+  }
+
+  .all-menu {
+    display: none;
+  }
+
+  .mobile-menu {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+    -webkit-align-items: flex-end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+  }
+
+  .text-block {
+    font-size: 3.5vw;
+    letter-spacing: -0.105vw;
+  }
+
+  .text-block-2 {
+    font-size: 3.5vw;
+    letter-spacing: -0.105vw;
+  }
+
+  .text-block-3 {
+    font-size: 3.5vw;
+    letter-spacing: -0.105vw;
+  }
+}
+
 @font-face {
   font-family: 'Helveticaneue';
   src: url('../fonts/HelveticaNeue.woff2') format('woff2');
