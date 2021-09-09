@@ -1,5 +1,5 @@
 <!DOCTYPE html><!--  This site was created in Webflow. http://www.webflow.com  -->
-<!--  Last Published: Thu Sep 09 2021 14:20:40 GMT+0000 (Coordinated Universal Time)  -->
+<!--  Last Published: Thu Sep 09 2021 15:00:55 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="61375907cb57e19c78370045" data-wf-site="61375907cb57e1998637003a" lang="en">
 <head>
   <meta charset="utf-8">
@@ -379,7 +379,7 @@
       </div>
       <div class="columns w-row">
         <div class="column w-col w-col-6">
-          <div class="chart-graph2 w-embed w-script">
+          <div class="chart-graph w-embed w-script">
             <style>
 	#canvas{
 		width:100%;
@@ -390,6 +390,16 @@
             </div>
             <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
             <script>
+var xmlhttp = new XMLHttpRequest();
+var url = graph.json;
+xmlhttp.open("GET", url, true);
+xmlhttp.send();
+xmlhttp.onreadystatechange = function(){
+  if(this.readyState == 4 && this.status == 200){
+  	var data = JSON.parse(this.responseText);
+    console.log(data);
+  }
+}
 var ctx = document.getElementById('canvas');
 var myChart = new Chart(ctx, {
     type: 'line',
@@ -415,7 +425,7 @@ var myChart = new Chart(ctx, {
           </div>
         </div>
         <div class="column-2 w-col w-col-6">
-          <div class="chart-graph2 w-embed w-script">
+          <div class="chart-graph w-embed w-script">
             <style>
 	#canvas2{
 		width:100%;
