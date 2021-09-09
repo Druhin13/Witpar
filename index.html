@@ -1,5 +1,5 @@
 <!DOCTYPE html><!--  This site was created in Webflow. http://www.webflow.com  -->
-<!--  Last Published: Thu Sep 09 2021 15:18:32 GMT+0000 (Coordinated Universal Time)  -->
+<!--  Last Published: Thu Sep 09 2021 15:25:04 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="61375907cb57e19c78370045" data-wf-site="61375907cb57e1998637003a" lang="en">
 <head>
   <meta charset="utf-8">
@@ -404,12 +404,6 @@ xmlhttp.onreadystatechange = function(){
     var witpar = data.returns.map(function(elem){
     return elem.witpar;
     });
-    var ibov = data.returns.map(function(elem){
-    return elem.ibov;
-    });
-    var cdi = data.returns.map(function(elem){
-    return elem.cdi;
-    });
 var ctx = document.getElementById('canvas');
 var myChart = new Chart(ctx, {
     type: 'line',
@@ -448,21 +442,38 @@ var myChart = new Chart(ctx, {
             </div>
             <!-- <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> -->
             <script>
+var xmlhttp2 = new XMLHttpRequest();
+var url2 = "graph.json";
+xmlhttp.open("GET", url2, true);
+xmlhttp.send();
+xmlhttp.onreadystatechange = function(){
+  if(this.readyState == 4 && this.status == 200){
+  	var data2 = JSON.parse(this.responseText);
+    //console.log(data);
+    var time2 = data2.returns.map(function(elem){
+    return elem.time2;
+    });
+    var ibov = data2.returns.map(function(elem){
+    return elem.ibov;
+    });
+    var cdi = data2.returns.map(function(elem){
+    return elem.cdi;
+    });
 var ctx2 = document.getElementById('canvas2');
 var myChart2 = new Chart(ctx2, {
     type: 'line',
     data: {
-        labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+        labels: time2,
         datasets: [{
             label: 'Ibov',
-            data: [12, 19, 3, 5, 2, 3],
+            data: ibov,
             backgroundColor: 'rgba(141, 141, 141, 1)',
             borderColor: 'rgba(141, 141, 141, 1)',
             borderWidth: 2
         },
         {
             label: 'CDI',
-            data: [12, 19, 3, 5, 2, 3],
+            data: cdi,
             backgroundColor: 'rgba(80, 80, 80, 1)',
             borderColor: 'rgba(80, 80, 80, 1)',
             borderWidth: 2
@@ -476,6 +487,8 @@ var myChart2 = new Chart(ctx2, {
         }
     }
 });
+  }
+}
 </script>
           </div>
         </div>
