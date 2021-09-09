@@ -1,5 +1,5 @@
 <!DOCTYPE html><!--  This site was created in Webflow. http://www.webflow.com  -->
-<!--  Last Published: Thu Sep 09 2021 15:03:12 GMT+0000 (Coordinated Universal Time)  -->
+<!--  Last Published: Thu Sep 09 2021 15:18:32 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="61375907cb57e19c78370045" data-wf-site="61375907cb57e1998637003a" lang="en">
 <head>
   <meta charset="utf-8">
@@ -397,17 +397,27 @@ xmlhttp.send();
 xmlhttp.onreadystatechange = function(){
   if(this.readyState == 4 && this.status == 200){
   	var data = JSON.parse(this.responseText);
-    console.log(data);
-  }
-}
+    //console.log(data);
+    var time = data.returns.map(function(elem){
+    return elem.time;
+    });
+    var witpar = data.returns.map(function(elem){
+    return elem.witpar;
+    });
+    var ibov = data.returns.map(function(elem){
+    return elem.ibov;
+    });
+    var cdi = data.returns.map(function(elem){
+    return elem.cdi;
+    });
 var ctx = document.getElementById('canvas');
 var myChart = new Chart(ctx, {
     type: 'line',
     data: {
-        labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+        labels: time,
         datasets: [{
             label: 'Witpar',
-            data: [12, 19, 3, 5, 2, 3],
+            data: witpar,
             backgroundColor: 'rgba(203, 203, 203, 1)',
             borderColor: 'rgba(203, 203, 203, 1)',
             borderWidth: 2
@@ -421,6 +431,8 @@ var myChart = new Chart(ctx, {
         }
     }
 });
+  }
+}
 </script>
           </div>
         </div>
