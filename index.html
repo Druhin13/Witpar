@@ -1,5 +1,5 @@
 <!DOCTYPE html><!--  This site was created in Webflow. http://www.webflow.com  -->
-<!--  Last Published: Thu Sep 09 2021 08:13:30 GMT+0000 (Coordinated Universal Time)  -->
+<!--  Last Published: Thu Sep 09 2021 14:02:51 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="61375907cb57e19c78370045" data-wf-site="61375907cb57e1998637003a" lang="en">
 <head>
   <meta charset="utf-8">
@@ -326,10 +326,10 @@
       </div>
     </div>
     <div id="section3" class="section5 wf-section">
-      <div id="past-returns" class="line-bar">
+      <div id="past-returns" class="line-bar chart-section">
         <div class="line2"></div>
       </div>
-      <div class="content-section">
+      <div class="content-section-chart">
         <div class="paragraph-holder">
           <div class="table-card table-top">
             <div class="table-header-holder">
@@ -376,6 +376,54 @@
             <div class="section-title">Returns<br></div>
           </div>
         </div>
+      </div>
+      <div class="chart-graph w-embed w-script">
+        <style>
+	#canvas{
+		width:100%;
+	}
+</style>
+        <div>
+          <canvas id="canvas">Canvas is not supported in your browser.</canvas>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script>
+var ctx = document.getElementById('canvas');
+var myChart = new Chart(ctx, {
+    type: 'line',
+    data: {
+        labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+        datasets: [{
+            label: 'Witpar',
+            data: [12, 19, 3, 5, 2, 3],
+            backgroundColor: 'rgba(203, 203, 203, 1)',
+            borderColor: 'rgba(203, 203, 203, 1)',
+            borderWidth: 2
+        },
+        {
+            label: 'Ibov',
+            data: [12, 19, 3, 5, 2, 3],
+            backgroundColor: 'rgba(203, 203, 203, 1)',
+            borderColor: 'rgba(203, 203, 203, 1)',
+            borderWidth: 2
+        },
+        {
+            label: 'CDI',
+            data: [12, 19, 3, 5, 2, 3],
+            backgroundColor: 'rgba(203, 203, 203, 1)',
+            borderColor: 'rgba(203, 203, 203, 1)',
+            borderWidth: 2
+        }]
+    },
+    options: {
+        scales: {
+            y: {
+                beginAtZero: true
+            }
+        }
+    }
+});
+</script>
       </div>
     </div>
     <div id="section3" class="footer wf-section">
