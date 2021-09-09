@@ -717,6 +717,7 @@ h1 {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  margin-top: 5vh;
 }
 
 .paragraph-holder2 {
