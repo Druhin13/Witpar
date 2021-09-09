@@ -9,61 +9,61 @@
         "time": "DEC 2012",
         "witpar": 14.39,
         "ibov": 2.02,
-        "cdi": 0
+        "cdi": 1.29
     },
     {
         "time": "DEC 2013",
         "witpar": 31.48,
         "ibov": -13.78,
-        "cdi": 0
+        "cdi": 9.4
     },
     {
         "time": "DEC 2014",
         "witpar": 29.63,
         "ibov": -16.29,
-        "cdi": 0
+        "cdi": 20.95
     },
     {
         "time": "DEC 2015",
         "witpar": 30.47,
         "ibov": -27.43,
-        "cdi": 0
+        "cdi": 36.94
     },
     {
         "time": "DEC 2016",
         "witpar": 71.34,
         "ibov": 0.82,
-        "cdi": 0
+        "cdi": 56.19
     },
     {
         "time": "DEC 2017",
         "witpar": 138.21,
         "ibov": 27.9,
-        "cdi": 0
+        "cdi": 71.7
     },
     {
         "time": "DEC 2018",
         "witpar": 143.05,
         "ibov": 47.1,
-        "cdi": 0
+        "cdi": 83.17
     },
     {
         "time": "DEC 2019",
         "witpar": 228.03,
         "ibov": 93.57,
-        "cdi": 0
+        "cdi": 93.99
     },
     {
         "time": "DEC 2020",
         "witpar": 193.2,
         "ibov": 99.21,
-        "cdi": 0
+        "cdi": 99.21
     },
     {
         "time": "AUG 2021",
         "witpar": 212.71,
         "ibov": 98.82,
-        "cdi": 0
+        "cdi": 107.22
     }
 ]
 
