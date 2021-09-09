@@ -1,5 +1,5 @@
 <!DOCTYPE html><!--  This site was created in Webflow. http://www.webflow.com  -->
-<!--  Last Published: Wed Sep 08 2021 20:28:57 GMT+0000 (Coordinated Universal Time)  -->
+<!--  Last Published: Thu Sep 09 2021 02:37:51 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="61375907cb57e19c78370045" data-wf-site="61375907cb57e1998637003a" lang="en">
 <head>
   <meta charset="utf-8">
@@ -21,7 +21,7 @@
         <a href="#approach" class="link-block w-inline-block">
           <div>approach</div>
         </a>
-        <a href="#about" class="link-block w-inline-block">
+        <a href="#" class="link-block w-inline-block">
           <div>about</div>
         </a>
         <a href="#" class="link-block w-inline-block">
@@ -70,7 +70,7 @@
       </a>
     </div>
   </div>
-  <div class="smooth-scroll-wrapper">
+  <div id="scroll-wrapper" class="smooth-scroll-wrapper">
     <div id="section2" class="section2 wf-section">
       <div id="approach" class="line-bar">
         <div class="line2"></div>
@@ -89,6 +89,8 @@
           </div>
         </div>
       </div>
+    </div>
+    <div id="section3" class="section3 wf-section">
       <div id="about" class="line-bar">
         <div class="line2"></div>
       </div>
@@ -108,7 +110,7 @@
                 <div class="text-block-3">view profile</div>
               </div>
               <div class="div-block-3">
-                <div data-w-id="461800f8-fe2f-8a1e-8ec8-e34c55d7ba65" data-animation-type="lottie" data-src="documents/arrow2-anim.json" data-loop="0" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="1.5" data-duration="0" class="lottie-animation2"></div>
+                <div data-w-id="a14e9cd3-47db-4551-c4d0-db31b45e2217" data-animation-type="lottie" data-src="documents/arrow2-anim.json" data-loop="0" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="1.5" data-duration="0" class="lottie-animation2"></div>
               </div>
             </a>
           </div>
@@ -123,7 +125,7 @@
                 <div>view profile</div>
               </div>
               <div class="div-block-3">
-                <div data-w-id="c1385f8c-156f-0ce4-7f20-e03023e3ad93" data-animation-type="lottie" data-src="documents/arrow2-anim.json" data-loop="0" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="1.5" data-duration="0" class="lottie-animation2"></div>
+                <div data-w-id="a14e9cd3-47db-4551-c4d0-db31b45e2227" data-animation-type="lottie" data-src="documents/arrow2-anim.json" data-loop="0" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="1.5" data-duration="0" class="lottie-animation2"></div>
               </div>
             </a>
           </div>
@@ -131,7 +133,7 @@
         <div class="big-title-holder">
           <div class="section-title">A bit more<br></div>
           <div class="div-block-6">
-            <div data-w-id="feb25562-126a-c578-f6b5-d9b42cf5a15a" data-animation-type="lottie" data-src="documents/attention-anim.json" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="canvas" data-default-duration="3.8" data-duration="0" class="lottie-animation-2"></div>
+            <div data-w-id="a14e9cd3-47db-4551-c4d0-db31b45e222d" data-animation-type="lottie" data-src="documents/attention-anim.json" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="canvas" data-default-duration="3.8" data-duration="0" class="lottie-animation-2"></div>
             <div class="section-title">about us<br></div>
           </div>
         </div>
@@ -301,6 +303,7 @@ pointer-events: none;
 }
 </style>
     <script>
+document.getElementById("scroll-wrapper").style.paddingBottom = "100vh";
 const body = document.body,
 scrollWrap = document.getElementsByClassName("smooth-scroll-wrapper")[0],
 height = scrollWrap.getBoundingClientRect().height - 1,

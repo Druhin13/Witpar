@@ -192,7 +192,8 @@ h1 {
   position: relative;
   z-index: 5;
   width: 100vw;
-  height: 400vh;
+  height: auto;
+  padding-bottom: 5vh;
   background-color: #101010;
 }
 
@@ -442,6 +443,15 @@ h1 {
 
 .mobile-menu {
   display: none;
+}
+
+.section3 {
+  position: relative;
+  z-index: 5;
+  width: 100vw;
+  height: auto;
+  padding-bottom: 5vh;
+  background-color: #101010;
 }
 
 @media screen and (max-width: 991px) {
