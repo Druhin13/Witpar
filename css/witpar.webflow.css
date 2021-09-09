@@ -99,6 +99,10 @@ h1 {
   color: #cbcbcb;
 }
 
+.link-block.mobile-menu {
+  display: inline-block;
+}
+
 .video-holder {
   width: 93.75vw;
   height: 55.5vh;
@@ -724,6 +728,18 @@ h1 {
   width: 100%;
 }
 
+.button-2 {
+  margin-left: 1.75vw;
+  padding: 2vh 2vw;
+  border-radius: 0.5vw;
+  background-color: #afafaf;
+  color: #101010;
+  font-weight: 400;
+  letter-spacing: -0.027vw;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
 @media screen and (max-width: 991px) {
   .menu-bar {
     width: 92vw;
@@ -883,6 +899,12 @@ h1 {
   .paragraph-holder2 {
     width: 39vw;
   }
+
+  .button-2 {
+    padding: 1.5vh 3vw;
+    font-size: 1.4vw;
+    letter-spacing: -0.042vw;
+  }
 }
 
 @media screen and (max-width: 479px) {
@@ -910,6 +932,10 @@ h1 {
   .link-block.view-profile {
     padding-top: 1.75vh;
     padding-bottom: 1.75vh;
+  }
+
+  .link-block.mobile-menu {
+    display: none;
   }
 
   .video-holder {
@@ -1038,10 +1064,6 @@ h1 {
   .paragraph-heading3 {
     font-size: 3.3vw;
     letter-spacing: -0.099vw;
-  }
-
-  .all-menu {
-    display: none;
   }
 
   .mobile-menu {
@@ -1190,6 +1212,14 @@ h1 {
   .paragraph-holder2 {
     width: 100%;
     margin-top: 5vh;
+  }
+
+  .button-2 {
+    margin-left: 0vw;
+    padding: 1.75vh 7vw;
+    border-radius: 2vw;
+    font-size: 3.5vw;
+    letter-spacing: -0.105vw;
   }
 }
 
