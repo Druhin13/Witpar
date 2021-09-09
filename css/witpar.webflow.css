@@ -258,6 +258,10 @@ h1 {
   padding-top: 2vh;
 }
 
+.paragraph-text.principles {
+  margin-top: 6.95vh;
+}
+
 .line {
   position: relative;
   width: 100%;
@@ -338,6 +342,10 @@ h1 {
   padding-top: 2vh;
 }
 
+.paragraph-text2.principles {
+  width: 68%;
+}
+
 .paragraph-heading {
   display: inline-block;
   padding-bottom: 0.25vh;
@@ -364,6 +372,14 @@ h1 {
   margin-top: 6.95vh;
 }
 
+.member-card.principles {
+  margin-top: 2vh;
+}
+
+.member-card.principles.top {
+  margin-top: 5vh;
+}
+
 .name-holder {
   display: -webkit-box;
   display: -webkit-flex;
@@ -374,6 +390,10 @@ h1 {
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
+}
+
+.name-holder.principles {
+  margin-bottom: 1vh;
 }
 
 .paragraph-heading2 {
@@ -395,6 +415,10 @@ h1 {
 
 .paragraph-heading2.top {
   padding-top: 2vh;
+}
+
+.paragraph-heading2.principles {
+  opacity: 1;
 }
 
 .paragraph-heading3 {
@@ -443,6 +467,10 @@ h1 {
 
 .mobile-menu {
   display: none;
+}
+
+.text-block-3 {
+  text-align: left;
 }
 
 .section3 {
@@ -543,7 +571,7 @@ h1 {
   z-index: 5;
   width: 100vw;
   height: auto;
-  padding-bottom: 5vh;
+  padding-bottom: 10vh;
   background-color: #101010;
 }
 
@@ -618,6 +646,31 @@ h1 {
 
 .regulatory-stamp {
   width: 10vw;
+}
+
+.text-block-4 {
+  text-align: right;
+}
+
+.button4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: auto;
+  margin-top: 2.75vh;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  border-top: 1px solid hsla(0, 0%, 79.6%, 0.5);
+  border-bottom: 1px solid hsla(0, 0%, 79.6%, 0.5);
+  text-decoration: none;
 }
 
 @media screen and (max-width: 991px) {
@@ -968,6 +1021,11 @@ h1 {
     -webkit-align-items: stretch;
     -ms-flex-align: stretch;
     align-items: stretch;
+  }
+
+  .text-block-4 {
+    font-size: 3.5vw;
+    letter-spacing: -0.105vw;
   }
 }
 
