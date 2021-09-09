@@ -248,6 +248,10 @@ h1 {
 
 .paragraph-holder {
   width: 24vw;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
 }
 
 .paragraph-text {
@@ -530,7 +534,7 @@ h1 {
   align-items: flex-end;
 }
 
-.button3 {
+.table-element {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -697,6 +701,7 @@ h1 {
 
 .columns {
   margin-top: 10vh;
+  padding-bottom: 5vh;
 }
 
 .column {
@@ -705,6 +710,17 @@ h1 {
 
 .column-2 {
   padding-right: 0px;
+}
+
+.div-block-7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.paragraph-holder2 {
+  width: 100%;
 }
 
 @media screen and (max-width: 991px) {
@@ -861,6 +877,10 @@ h1 {
 
   .columns {
     margin-top: 7.5vh;
+  }
+
+  .paragraph-holder2 {
+    width: 39vw;
   }
 }
 
@@ -1164,6 +1184,11 @@ h1 {
 
   .column-2 {
     padding-left: 0px;
+  }
+
+  .paragraph-holder2 {
+    width: 100%;
+    margin-top: 5vh;
   }
 }
 
