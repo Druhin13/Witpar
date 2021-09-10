@@ -748,6 +748,37 @@ h1 {
   width: 100%;
 }
 
+.transition {
+  position: fixed;
+  left: 0%;
+  top: 0%;
+  right: 0%;
+  bottom: 0%;
+  z-index: 500;
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  background-color: #101010;
+}
+
+.loading-timer {
+  position: fixed;
+  left: auto;
+  top: auto;
+  right: 2%;
+  bottom: 5%;
+  width: 10vw;
+}
+
 @media screen and (max-width: 991px) {
   .menu-bar {
     width: 92vw;
@@ -924,6 +955,10 @@ h1 {
 
   .inner-table-holder {
     width: 39vw;
+  }
+
+  .loading-timer {
+    width: 14vw;
   }
 }
 
@@ -1252,6 +1287,10 @@ h1 {
 
   .inner-table-holder {
     width: 100%;
+  }
+
+  .loading-timer {
+    width: 30vw;
   }
 }
 
