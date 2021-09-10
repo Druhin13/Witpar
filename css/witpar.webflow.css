@@ -287,6 +287,7 @@ h1 {
 }
 
 .section-title {
+  overflow: hidden;
   -webkit-box-flex: 0;
   -webkit-flex: 0 0 auto;
   -ms-flex: 0 0 auto;
@@ -1078,6 +1079,11 @@ h1 {
     font-size: 11.5vw;
     text-align: left;
     letter-spacing: -0.345vw;
+  }
+
+  .section-title.fade-up.tricks {
+    margin-top: -8px;
+    padding-bottom: 8px;
   }
 
   .lottie-animation-2 {
