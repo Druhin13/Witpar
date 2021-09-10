@@ -1,0 +1,34 @@
+{
+	"dir": "ltr",
+	"lang": "en",
+	"name": "Witpar",
+	"short_name": "Witpar",
+	"scope": "/",
+	"display": "fullscreen",
+	"start_url": "https://witpar.com",
+	"background_color": "#101010",
+  "theme_color": "#101010",
+	"description": "We are an asset management firm based in São Paulo, Brazil",
+	"orientation": "portrait",
+	"related_applications": [],
+	"categories": ["investment", "firm", "asset", "management"],
+	"prefer_related_applications": false,
+	"icons": [
+		{
+			"src": "https://uploads-ssl.webflow.com/61375907cb57e1998637003a/6138ab9d75afa08867a765ab_favicon.png",
+			"type": "image/png",
+			"sizes": "32x32"
+      },
+		{
+			"src": "https://uploads-ssl.webflow.com/61375907cb57e1998637003a/6138aba49e55aa59351557cf_webclip.png",
+			"type": "image/png",
+			"sizes": "256x256"
+      },
+		{
+			"src": "https://uploads-ssl.webflow.com/61375907cb57e1998637003a/613adae46c168c54604cdf87_maskable_icon.png",
+			"sizes": "512x512",
+			"type": "image/png",
+			"purpose": "any maskable"
+    }
+    ]
+}
