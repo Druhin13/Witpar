@@ -108,6 +108,11 @@ h1 {
   display: inline-block;
 }
 
+.link-block.mobile-menu.english {
+  margin-left: 1vw;
+  text-decoration: underline;
+}
+
 .video-holder {
   position: relative;
   display: -webkit-box;
