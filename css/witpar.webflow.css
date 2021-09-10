@@ -947,6 +947,7 @@ h1 {
   }
 
   .big-table-holder {
+    margin-top: 10vh;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
@@ -1282,6 +1283,7 @@ h1 {
   }
 
   .big-table-holder {
+    margin-top: 5vh;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
