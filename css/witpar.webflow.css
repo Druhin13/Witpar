@@ -21,7 +21,7 @@ h1 {
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  background-color: #cbcbcb;
+  background-color: #e4e4e4;
 }
 
 .body {
@@ -80,7 +80,7 @@ h1 {
 .link-block {
   margin-left: 2vw;
   opacity: 0.55;
-  color: #cbcbcb;
+  color: #e4e4e4;
   font-size: 0.9vw;
   line-height: 1;
   letter-spacing: -0.027vw;
@@ -101,7 +101,7 @@ h1 {
   padding-top: 2vh;
   padding-bottom: 2vh;
   opacity: 1;
-  color: #cbcbcb;
+  color: #e4e4e4;
 }
 
 .link-block.mobile-menu {
@@ -153,7 +153,7 @@ h1 {
   width: 100%;
   height: 100%;
   border-radius: 1vw;
-  opacity: 0.4;
+  opacity: 0.55;
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
 }
@@ -310,7 +310,7 @@ h1 {
 .paragraph-text {
   opacity: 0.85;
   font-family: Helv, sans-serif;
-  color: #cbcbcb;
+  color: #e4e4e4;
   font-size: 1vw;
   line-height: 1;
   font-weight: 300;
@@ -331,7 +331,7 @@ h1 {
   height: 1px;
   margin-top: 7.4vh;
   margin-bottom: 7.4vh;
-  background-color: #cbcbcb;
+  background-color: #e4e4e4;
   opacity: 0.5;
 }
 
@@ -341,7 +341,7 @@ h1 {
   -webkit-flex: 0 0 auto;
   -ms-flex: 0 0 auto;
   flex: 0 0 auto;
-  color: #cbcbcb;
+  color: #e4e4e4;
   font-size: 6.25vw;
   line-height: 0.95;
   text-align: right;
@@ -352,7 +352,7 @@ h1 {
   position: relative;
   width: 100%;
   height: 1px;
-  background-color: #cbcbcb;
+  background-color: #e4e4e4;
   opacity: 0.5;
 }
 
@@ -395,7 +395,7 @@ h1 {
 .paragraph-text2 {
   opacity: 0.65;
   font-family: Helv, sans-serif;
-  color: #cbcbcb;
+  color: #e4e4e4;
   font-size: 0.88vw;
   line-height: 1.05;
   font-weight: 300;
@@ -416,7 +416,7 @@ h1 {
   border-bottom: 1px solid hsla(0, 0%, 79.6%, 0.85);
   opacity: 0.85;
   font-family: Helv, sans-serif;
-  color: #cbcbcb;
+  color: #e4e4e4;
   font-size: 0.88vw;
   line-height: 1.05;
   font-weight: 300;
@@ -469,7 +469,7 @@ h1 {
   flex: 0 0 auto;
   opacity: 0.85;
   font-family: Helv, sans-serif;
-  color: #cbcbcb;
+  color: #e4e4e4;
   font-size: 0.88vw;
   line-height: 1.05;
   font-weight: 300;
@@ -490,7 +490,7 @@ h1 {
   padding-bottom: 0.25vh;
   opacity: 0.85;
   font-family: Helv, sans-serif;
-  color: #cbcbcb;
+  color: #e4e4e4;
   font-size: 0.88vw;
   line-height: 1.05;
   font-weight: 300;
@@ -519,8 +519,8 @@ h1 {
   -webkit-flex: 0 0 auto;
   -ms-flex: 0 0 auto;
   flex: 0 0 auto;
-  border-top: 1px solid #cbcbcb;
-  border-bottom: 1px solid #cbcbcb;
+  border-top: 1px solid #e4e4e4;
+  border-bottom: 1px solid #e4e4e4;
   -webkit-transition: opacity 200ms ease;
   transition: opacity 200ms ease;
   text-decoration: none;
@@ -671,7 +671,7 @@ h1 {
   margin-top: 0vh;
   opacity: 0.65;
   font-family: Helv, sans-serif;
-  color: #cbcbcb;
+  color: #e4e4e4;
   font-size: 0.88vw;
   line-height: 1.05;
   font-weight: 300;
@@ -801,7 +801,7 @@ h1 {
   margin-left: 1.75vw;
   padding: 2vh 2vw;
   border-radius: 0.5vw;
-  background-color: #afafaf;
+  background-color: #ccc;
   -webkit-transition: opacity 200ms ease;
   transition: opacity 200ms ease;
   color: #101010;
