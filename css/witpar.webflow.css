@@ -119,6 +119,11 @@ h1 {
   text-decoration: underline;
 }
 
+.link-block.english {
+  margin-left: 1vw;
+  text-decoration: underline;
+}
+
 .video-holder {
   position: relative;
   display: -webkit-box;
@@ -911,6 +916,10 @@ h1 {
     padding-bottom: 1.5vh;
   }
 
+  .link-block.mobile-menu {
+    display: none;
+  }
+
   .video-holder {
     width: 92vw;
     height: 60vh;
@@ -930,6 +939,10 @@ h1 {
 
   .heading {
     font-size: 4.5vw;
+  }
+
+  .heading.portu {
+    font-size: 4.25vw;
   }
 
   .button {
@@ -974,6 +987,22 @@ h1 {
   .section-title {
     font-size: 7.5vw;
     letter-spacing: -0.225vw;
+  }
+
+  .section-title.fade-up.tricks.portu {
+    font-size: 7vw;
+  }
+
+  .section-title.fade-up2.tricks.portu {
+    font-size: 7vw;
+  }
+
+  .section-title.fade-up3.tricks.portu {
+    font-size: 7vw;
+  }
+
+  .section-title.fade-up5.tricks.portu {
+    font-size: 7vw;
   }
 
   .paragraph-text2 {
@@ -1108,6 +1137,10 @@ h1 {
     display: none;
   }
 
+  .link-block.english {
+    margin-left: 3vw;
+  }
+
   .video-holder {
     width: 90vw;
     height: 60vh;
@@ -1135,6 +1168,10 @@ h1 {
   .heading {
     font-size: 6.5vw;
     letter-spacing: -0.195vw;
+  }
+
+  .heading.portu {
+    font-size: 6.25vw;
   }
 
   .button {
@@ -1198,6 +1235,22 @@ h1 {
   .section-title.fade-up.tricks {
     margin-top: -8px;
     padding-bottom: 8px;
+  }
+
+  .section-title.fade-up.tricks.portu {
+    font-size: 11vw;
+  }
+
+  .section-title.fade-up2.tricks.portu {
+    font-size: 11vw;
+  }
+
+  .section-title.fade-up3.tricks.portu {
+    font-size: 11vw;
+  }
+
+  .section-title.fade-up5.tricks.portu {
+    font-size: 11vw;
   }
 
   .lottie-animation-2 {
