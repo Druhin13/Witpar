@@ -1,5 +1,5 @@
 <!DOCTYPE html><!--  This site was created in Webflow. http://www.webflow.com  -->
-<!--  Last Published: Sat Sep 11 2021 04:41:47 GMT+0000 (Coordinated Universal Time)  -->
+<!--  Last Published: Sat Sep 11 2021 05:08:23 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="61375907cb57e19c78370045" data-wf-site="61375907cb57e1998637003a" lang="en">
 <head>
   <meta charset="utf-8">
@@ -474,8 +474,8 @@ xmlhttp.onreadystatechange = function(){
     var cdi = data.returns.map(function(elem){
     return elem.cdi;
     });
-var ctx2 = document.getElementById('canvas2');
-var myChart2 = new Chart(ctx2, {
+	var ctx2 = document.getElementById('canvas2');
+	var myChart2 = new Chart(ctx2, {
     type: 'line',
     data: {
         labels: time,
@@ -513,10 +513,29 @@ var myChart2 = new Chart(ctx2, {
     		responsive: true,
         maintainAspectRatio: false,
         scales: {
-            y: {
-                beginAtZero: true
-            }
-        }
+						yAxes: [
+        		{
+         			ticks: {
+           		fontColor: "#e4e4e4"
+         		},
+          	gridLines: {
+            	display: true,
+            	color: 'rgba(203, 203, 203, 0.1)'
+         		}
+        	 }
+      		],
+      		 xAxes: [
+        	 {
+          	 ticks: {
+             fontColor: "#e4e4e4"
+           },
+          	 gridLines: {
+             display: true,
+             color: 'rgba(203, 203, 203, 0.1)'
+           }
+         }
+       ]
+      }
     }
 });
   }
