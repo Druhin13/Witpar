@@ -312,6 +312,10 @@ h1 {
   flex: 0 0 auto;
 }
 
+.paragraph-holder.portu {
+  width: 23.5vw;
+}
+
 .paragraph-text {
   opacity: 0.85;
   font-family: Helv, sans-serif;
@@ -351,6 +355,11 @@ h1 {
   line-height: 0.95;
   text-align: right;
   letter-spacing: -0.1875vw;
+}
+
+.section-title.fade-up3.tricks.portu {
+  margin-top: -6px;
+  padding-bottom: 15px;
 }
 
 .line2 {
@@ -455,14 +464,28 @@ h1 {
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 2.75vh;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.name-holder.principles {
+  margin-bottom: 1vh;
+}
+
+.name-holder.name {
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
 }
 
-.name-holder.principles {
-  margin-bottom: 1vh;
+.name-holder.footer-heading {
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
 }
 
 .paragraph-heading2 {
@@ -497,7 +520,7 @@ h1 {
   font-family: Helv, sans-serif;
   color: #e4e4e4;
   font-size: 0.88vw;
-  line-height: 1.05;
+  line-height: 1.1;
   font-weight: 300;
   text-align: right;
   letter-spacing: -0.0264vw;
@@ -549,7 +572,12 @@ h1 {
 }
 
 .text-block-3 {
+  line-height: 1.1;
   text-align: left;
+}
+
+.text-block-3.right {
+  text-align: right;
 }
 
 .section3 {
