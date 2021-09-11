@@ -1,5 +1,5 @@
 <!DOCTYPE html><!--  This site was created in Webflow. http://www.webflow.com  -->
-<!--  Last Published: Sat Sep 11 2021 02:21:00 GMT+0000 (Coordinated Universal Time)  -->
+<!--  Last Published: Sat Sep 11 2021 02:28:47 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="61375907cb57e19c78370045" data-wf-site="61375907cb57e1998637003a" lang="en">
 <head>
   <meta charset="utf-8">
@@ -73,9 +73,9 @@
 </style>
     </div>
     <div data-w-id="cf915a6d-118d-909c-41ab-49c0a01f5ad5" class="video-holder">
-      <div data-poster-url="videos/iStock-1180278407-poster-00001.jpg" data-video-urls="videos/iStock-1180278407-transcode.mp4,videos/iStock-1180278407-transcode.webm" data-autoplay="true" data-loop="true" data-wf-ignore="true" class="background-video w-background-video w-background-video-atom"><video autoplay="" loop="" style="background-image:url(&quot;videos/iStock-1180278407-poster-00001.jpg&quot;)" muted="" playsinline="" data-wf-ignore="true" data-object-fit="cover">
-          <source src="videos/iStock-1180278407-transcode.mp4" data-wf-ignore="true">
-          <source src="videos/iStock-1180278407-transcode.webm" data-wf-ignore="true">
+      <div data-poster-url="https://uploads-ssl.webflow.com/61375907cb57e1998637003a/613c13aaff02dc248a9eb5cc_sao paulo-poster-00001.jpg" data-video-urls="https://uploads-ssl.webflow.com/61375907cb57e1998637003a/613c13aaff02dc248a9eb5cc_sao paulo-transcode.mp4,https://uploads-ssl.webflow.com/61375907cb57e1998637003a/613c13aaff02dc248a9eb5cc_sao paulo-transcode.webm" data-autoplay="true" data-loop="true" data-wf-ignore="true" class="background-video w-background-video w-background-video-atom"><video autoplay="" loop="" style="background-image:url(&quot;https://uploads-ssl.webflow.com/61375907cb57e1998637003a/613c13aaff02dc248a9eb5cc_sao paulo-poster-00001.jpg&quot;)" muted="" playsinline="" data-wf-ignore="true" data-object-fit="cover">
+          <source src="https://uploads-ssl.webflow.com/61375907cb57e1998637003a/613c13aaff02dc248a9eb5cc_sao paulo-transcode.mp4" data-wf-ignore="true">
+          <source src="https://uploads-ssl.webflow.com/61375907cb57e1998637003a/613c13aaff02dc248a9eb5cc_sao paulo-transcode.webm" data-wf-ignore="true">
         </video></div>
       <div class="scroll-down-circle">
         <div class="text-block-2">Rolagem</div>
@@ -386,44 +386,55 @@
       </div>
       <div class="columns w-row">
         <div class="column w-col w-col-6">
-          <div class="paragraph-holder">
-            <div class="table-card table-top">
-              <div class="table-header-holder">
-                <div class="paragraph-heading">August / th</div>
-              </div>
-              <div class="table-element">
-                <div class="link-block view-profile">
-                  <div class="text-block-3">Witpar fia</div>
-                </div>
-                <div class="link-block view-profile">
-                  <div class="text-block-3">-1,32%</div>
-                </div>
-              </div>
-              <div class="table-element">
-                <div class="link-block view-profile">
-                  <div class="text-block-3">Ibovespa</div>
-                </div>
-                <div class="link-block view-profile">
-                  <div class="text-block-3">-2,48%</div>
-                </div>
-              </div>
-              <div class="table-element">
-                <div class="link-block view-profile">
-                  <div class="text-block-3">CDI</div>
-                </div>
-                <div class="link-block view-profile">
-                  <div class="text-block-3">0,42%</div>
-                </div>
-              </div>
-              <div class="table-element">
-                <div class="link-block view-profile">
-                  <div class="text-block-3">AuM (R$)<br></div>
-                </div>
-                <div class="link-block view-profile">
-                  <div class="text-block-3">31.734.712,37</div>
-                </div>
-              </div>
+          <div class="chart-graph w-embed w-script">
+            <style>
+	#canvas{
+		width:100%;
+	}
+</style>
+            <div>
+              <canvas id="canvas">Canvas is not supported in your browser.</canvas>
             </div>
+            <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+            <script>
+var xmlhttp = new XMLHttpRequest();
+var url = "graph.json";
+xmlhttp.open("GET", url, true);
+xmlhttp.send();
+xmlhttp.onreadystatechange = function(){
+  if(this.readyState == 4 && this.status == 200){
+  	var data = JSON.parse(this.responseText);
+    //console.log(data);
+    var time = data.returns.map(function(elem){
+    return elem.time;
+    });
+    var witpar = data.returns.map(function(elem){
+    return elem.witpar;
+    });
+var ctx = document.getElementById('canvas');
+var myChart = new Chart(ctx, {
+    type: 'line',
+    data: {
+        labels: time,
+        datasets: [{
+            label: 'Witpar',
+            data: witpar,
+            backgroundColor: 'rgba(203, 203, 203, 1)',
+            borderColor: 'rgba(203, 203, 203, 1)',
+            borderWidth: 2
+        }]
+    },
+    options: {
+        scales: {
+            y: {
+                beginAtZero: true
+            }
+        }
+    }
+});
+  }
+}
+</script>
           </div>
         </div>
         <div class="column-2 w-col w-col-6">
@@ -489,7 +500,7 @@ var myChart2 = new Chart(ctx2, {
     },
     options: {
     		responsive: true,
-        maintainAspectRatio: false,
+        maintainAspectRatio	false,
         scales: {
             y: {
                 beginAtZero: true
