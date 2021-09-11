@@ -1,5 +1,5 @@
 <!DOCTYPE html><!--  This site was created in Webflow. http://www.webflow.com  -->
-<!--  Last Published: Sat Sep 11 2021 06:49:50 GMT+0000 (Coordinated Universal Time)  -->
+<!--  Last Published: Sat Sep 11 2021 11:56:52 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="61375907cb57e19c78370045" data-wf-site="61375907cb57e1998637003a" lang="en">
 <head>
   <meta charset="utf-8">
@@ -318,200 +318,6 @@
           </div>
         </div>
       </div>
-      <div class="columns w-row">
-        <div class="column w-col w-col-6">
-          <div class="chart-graph witpar-only w-embed w-script">
-            <style>
-	#canvas{
-		width:100%;
-	}
-</style>
-            <div>
-              <canvas id="canvas">Canvas is not supported in your browser.</canvas>
-            </div>
-            <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-            <script>
-var xmlhttp = new XMLHttpRequest();
-var url = "graph.json";
-xmlhttp.open("GET", url, true);
-xmlhttp.send();
-xmlhttp.onreadystatechange = function(){
-  if(this.readyState == 4 && this.status == 200){
-  	var data = JSON.parse(this.responseText);
-    //console.log(data);
-    var time = data.returns.map(function(elem){
-    return elem.time;
-    });
-    var witpar = data.returns.map(function(elem){
-    return elem.witpar;
-    });
-var ctx = document.getElementById('canvas');
-var myChart = new Chart(ctx, {
-    type: 'line',
-    data: {
-        labels: time,
-        datasets: [{
-            label: 'Witpar',
-            data: witpar,
-            backgroundColor: 'rgba(203, 203, 203, 1)',
-            borderColor: 'rgba(203, 203, 203, 1)',
-            borderWidth: 2
-        }]
-    },
-    options: {
-        scales: {
-            y: {
-                beginAtZero: true
-            }
-        }
-    }
-});
-  }
-}
-</script>
-          </div>
-          <div class="chart-graph w-embed w-script">
-            <style>
-	#canvas{
-		width:100%;
-	}
-</style>
-            <div>
-              <canvas id="canvas">Canvas is not supported in your browser.</canvas>
-            </div>
-            <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-            <script>
-var xmlhttp = new XMLHttpRequest();
-var url = "graph.json";
-xmlhttp.open("GET", url, true);
-xmlhttp.send();
-xmlhttp.onreadystatechange = function(){
-  if(this.readyState == 4 && this.status == 200){
-  	var data = JSON.parse(this.responseText);
-    //console.log(data);
-    var time = data.returns.map(function(elem){
-    return elem.time;
-    });
-    var witpar = data.returns.map(function(elem){
-    return elem.witpar;
-    });
-var ctx = document.getElementById('canvas');
-var myChart = new Chart(ctx, {
-    type: 'line',
-    data: {
-        labels: time,
-        datasets: [{
-            label: 'Witpar',
-            data: witpar,
-            fill: true,
-            backgroundColor: 'rgba(203, 203, 203, 0.1)',
-            borderColor: 'rgba(203, 203, 203, 1)',
-            borderWidth: 2,
-            tension: 0.1
-        }]
-    },
-    options: {
-        scales: {
-            y: {
-                beginAtZero: true
-            }
-        }
-    }
-});
-  }
-}
-</script>
-          </div>
-        </div>
-        <div class="column-2 w-col w-col-6">
-          <div class="chart-graph w-embed w-script">
-            <style>
-	#canvas2{
-		width:100%;
-	}
-  @media (min-width: 320px) and (max-width: 480px) {
-  .canvasholder{
-  	width:100%;
-  	height:75vh;
-  }
-}
-</style>
-            <div class="canvasholder">
-              <canvas id="canvas2">Canvas is not supported in your browser.</canvas>
-            </div>
-            <!-- <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> -->
-            <script>
-var xmlhttp = new XMLHttpRequest();
-var url = "graph.json";
-xmlhttp.open("GET", url, true);
-xmlhttp.send();
-xmlhttp.onreadystatechange = function(){
-  if(this.readyState == 4 && this.status == 200){
-  	var data = JSON.parse(this.responseText);
-    //console.log(data);
-    var time = data.returns.map(function(elem){
-    return elem.time;
-    });
-    var witpar = data.returns.map(function(elem){
-    return elem.witpar;
-    });
-    var ibov = data.returns.map(function(elem){
-    return elem.ibov;
-    });
-    var cdi = data.returns.map(function(elem){
-    return elem.cdi;
-    });
-	var ctx2 = document.getElementById('canvas2');
-	var myChart2 = new Chart(ctx2, {
-    type: 'line',
-    data: {
-        labels: time,
-        datasets: [
-        {
-            label: 'Witpar',
-            data: witpar,
-            fill: true,
-            backgroundColor: 'rgba(203, 203, 203, 0.1)',
-            borderColor: 'rgba(203, 203, 203, 1)',
-            borderWidth: 2,
-            tension: 0.1
-        },
-        {
-            label: 'Ibov',
-            data: ibov,
-            fill: true,
-            backgroundColor: 'rgba(141, 141, 141, 0.1)',
-            borderColor: 'rgba(141, 141, 141, 1)',
-            borderWidth: 1,
-            tension: 0.1
-        },
-        {
-        		label: 'CDI',
-            data: cdi,
-            fill: true,
-            backgroundColor: 'rgba(80, 80, 80, 0.1)',
-            borderColor: 'rgba(80, 80, 80, 1)',
-            borderWidth: 1,
-            tension: 0.1
-        }
-        ]
-    },
-    options: {
-    		responsive: true,
-        maintainAspectRatio: false,
-        scales: {
-            y: {
-                beginAtZero: true
-            }
-        }
-    }
-});
-  }
-}
-</script>
-          </div>
-        </div>
-      </div>
       <div class="big-table-holder">
         <div class="paragraph-holder portu">
           <div class="table-card table-top">
@@ -761,6 +567,213 @@ xmlhttp.onreadystatechange = function(){
           </div>
         </div>
       </div>
+      <div class="columns w-row">
+        <div class="column w-col w-col-6">
+          <div class="chart-graph witpar-only w-embed w-script">
+            <style>
+	#canvas{
+		width:100%;
+	}
+</style>
+            <div>
+              <canvas id="canvas">Canvas is not supported in your browser.</canvas>
+            </div>
+            <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+            <script>
+var xmlhttp = new XMLHttpRequest();
+var url = "graph.json";
+xmlhttp.open("GET", url, true);
+xmlhttp.send();
+xmlhttp.onreadystatechange = function(){
+  if(this.readyState == 4 && this.status == 200){
+  	var data = JSON.parse(this.responseText);
+    //console.log(data);
+    var time = data.returns.map(function(elem){
+    return elem.time;
+    });
+    var witpar = data.returns.map(function(elem){
+    return elem.witpar;
+    });
+var ctx = document.getElementById('canvas');
+var myChart = new Chart(ctx, {
+    type: 'line',
+    data: {
+        labels: time,
+        datasets: [{
+            label: 'Witpar',
+            data: witpar,
+            backgroundColor: 'rgba(203, 203, 203, 1)',
+            borderColor: 'rgba(203, 203, 203, 1)',
+            borderWidth: 2
+        }]
+    },
+    options: {
+        scales: {
+            y: {
+                beginAtZero: true
+            }
+        }
+    }
+});
+  }
+}
+</script>
+          </div>
+          <div class="chart-graph w-embed w-script">
+            <style>
+	#canvas{
+		width:100%;
+	}
+</style>
+            <div>
+              <canvas id="canvas">Canvas is not supported in your browser.</canvas>
+            </div>
+            <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0/dist/Chart.min.js"></script>
+            <script>
+var xmlhttp = new XMLHttpRequest();
+var url = "graph.json";
+xmlhttp.open("GET", url, true);
+xmlhttp.send();
+xmlhttp.onreadystatechange = function(){
+  if(this.readyState == 4 && this.status == 200){
+  	var data = JSON.parse(this.responseText);
+    //console.log(data);
+    var time = data.returns.map(function(elem){
+    return elem.time;
+    });
+    var witpar = data.returns.map(function(elem){
+    return elem.witpar;
+    });
+var ctx = document.getElementById('canvas');
+var myChart = new Chart(ctx, {
+    type: 'line',
+    data: {
+        labels: time,
+        datasets: [{
+            label: 'Witpar',
+            data: witpar,
+            fill: true,
+            backgroundColor: 'rgba(203, 203, 203, 0.1)',
+            borderColor: 'rgba(203, 203, 203, 1)',
+            borderWidth: 2,
+            tension: 0.1
+        }]
+    },
+    options: {
+        scales: {
+            yAxes: [{
+       			 gridLines: {
+         		 display: true,
+         		 zeroLineColor: '#CBCBCB',
+         		 lineWidth: 1,
+             color: '#CBCBCB'
+      		  }
+    		  }],
+      			xAxes: [{
+        		gridLines: {
+          	display: true,
+          	lineWidth: 1,
+            zeroLineColor: '#CBCBCB',
+          	color: '#CBCBCB'
+       		 }
+      		}]
+        }
+    }
+});
+  }
+}
+</script>
+          </div>
+        </div>
+        <div class="column-2 w-col w-col-6">
+          <div class="chart-graph w-embed w-script">
+            <style>
+	#canvas2{
+		width:100%;
+	}
+  @media (min-width: 320px) and (max-width: 480px) {
+  .canvasholder{
+  	width:100%;
+  	height:75vh;
+  }
+}
+</style>
+            <div class="canvasholder">
+              <canvas id="canvas2">Canvas is not supported in your browser.</canvas>
+            </div>
+            <!-- <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> -->
+            <script>
+var xmlhttp = new XMLHttpRequest();
+var url = "graph.json";
+xmlhttp.open("GET", url, true);
+xmlhttp.send();
+xmlhttp.onreadystatechange = function(){
+  if(this.readyState == 4 && this.status == 200){
+  	var data = JSON.parse(this.responseText);
+    //console.log(data);
+    var time = data.returns.map(function(elem){
+    return elem.time;
+    });
+    var witpar = data.returns.map(function(elem){
+    return elem.witpar;
+    });
+    var ibov = data.returns.map(function(elem){
+    return elem.ibov;
+    });
+    var cdi = data.returns.map(function(elem){
+    return elem.cdi;
+    });
+	var ctx2 = document.getElementById('canvas2');
+	var myChart2 = new Chart(ctx2, {
+    type: 'line',
+    data: {
+        labels: time,
+        datasets: [
+        {
+            label: 'Witpar',
+            data: witpar,
+            fill: true,
+            backgroundColor: 'rgba(203, 203, 203, 0.1)',
+            borderColor: 'rgba(203, 203, 203, 1)',
+            borderWidth: 2,
+            tension: 0.1
+        },
+        {
+            label: 'Ibov',
+            data: ibov,
+            fill: true,
+            backgroundColor: 'rgba(141, 141, 141, 0.1)',
+            borderColor: 'rgba(141, 141, 141, 1)',
+            borderWidth: 1,
+            tension: 0.1
+        },
+        {
+        		label: 'CDI',
+            data: cdi,
+            fill: true,
+            backgroundColor: 'rgba(80, 80, 80, 0.1)',
+            borderColor: 'rgba(80, 80, 80, 1)',
+            borderWidth: 1,
+            tension: 0.1
+        }
+        ]
+    },
+    options: {
+    		responsive: true,
+        maintainAspectRatio: false,
+        scales: {
+            y: {
+                beginAtZero: true
+            }
+        }
+    }
+});
+  }
+}
+</script>
+          </div>
+        </div>
+      </div>
     </div>
     <div id="section3" class="footer wf-section">
       <div id="contato" class="line-bar">
@@ -871,7 +884,7 @@ xmlhttp.onreadystatechange = function(){
     width: 100%;
     height: 100vh;
     pointer-events: none;
-    opacity: .04;
+    opacity: .03;
 }
 </style>
     <script>const noise = () => {

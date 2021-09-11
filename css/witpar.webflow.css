@@ -58,8 +58,7 @@ h1 {
 }
 
 .menu-logo {
-  width: 6.785vw;
-  height: 2.5vh;
+  width: 8.5vw;
 }
 
 .div-block {
@@ -827,7 +826,7 @@ h1 {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 12.5vh;
+  margin-top: 10vh;
 }
 
 .paragraph-holder2 {
@@ -1000,6 +999,10 @@ h1 {
     width: 39vw;
   }
 
+  .paragraph-holder.portu {
+    width: 33.5vw;
+  }
+
   .paragraph-text {
     font-size: 1.6vw;
     letter-spacing: -0.048vw;
@@ -1069,6 +1072,10 @@ h1 {
     height: 1vh;
   }
 
+  .text-block-3 {
+    line-height: 1.15;
+  }
+
   .table-card {
     margin-top: 7.5vh;
   }
@@ -1106,7 +1113,7 @@ h1 {
   }
 
   .big-table-holder {
-    margin-top: 10vh;
+    margin-top: 5vh;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
@@ -1125,7 +1132,7 @@ h1 {
   }
 
   .inner-table-holder {
-    width: 39vw;
+    width: 33.5vw;
   }
 
   .loading-timer {
@@ -1240,6 +1247,10 @@ h1 {
   .paragraph-holder {
     width: 100%;
     margin-top: 5vh;
+  }
+
+  .paragraph-holder.portu {
+    width: 98%;
   }
 
   .paragraph-text {
@@ -1500,7 +1511,7 @@ h1 {
   }
 
   .inner-table-holder {
-    width: 100%;
+    width: 98%;
   }
 
   .loading-timer {
