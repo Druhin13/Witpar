@@ -679,7 +679,7 @@ h1 {
   z-index: 5;
   width: 100vw;
   height: auto;
-  padding-bottom: 10vh;
+  padding-bottom: 8vh;
   background-color: #101010;
 }
 
@@ -807,8 +807,8 @@ h1 {
 }
 
 .columns {
-  margin-top: 10vh;
-  padding-bottom: 5vh;
+  margin-top: 12.5vh;
+  padding-bottom: 2vh;
 }
 
 .column {
@@ -865,19 +865,18 @@ h1 {
   top: 0%;
   right: 0%;
   bottom: 0%;
-  z-index: 500;
+  z-index: 300;
   display: none;
   width: 100vw;
   height: 100vh;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   background-color: #101010;
 }
 
@@ -920,6 +919,15 @@ h1 {
   background-color: #bcbcbc;
 }
 
+.full-logo {
+  width: 16vw;
+  height: 16vw;
+  background-image: url('../images/Witpar-full-logo.svg');
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 @media screen and (max-width: 991px) {
   .menu-bar {
     width: 92vw;
@@ -949,6 +957,11 @@ h1 {
 
   .link-block.mobile-menu {
     display: none;
+  }
+
+  .link-block.mobile-menu.english {
+    display: inline-block;
+    margin-left: 2vw;
   }
 
   .video-holder {
@@ -1135,12 +1148,21 @@ h1 {
     width: 33.5vw;
   }
 
+  .inner-table-holder.english {
+    width: 39vw;
+  }
+
   .loading-timer {
     width: 14vw;
   }
 
   .scroll-down-circle {
     display: none;
+  }
+
+  .full-logo {
+    width: 25vw;
+    height: 25vw;
   }
 }
 
@@ -1176,6 +1198,10 @@ h1 {
     display: none;
   }
 
+  .link-block.mobile-menu.english {
+    margin-left: 4vw;
+  }
+
   .link-block.english {
     margin-left: 3vw;
   }
@@ -1183,7 +1209,7 @@ h1 {
   .video-holder {
     width: 90vw;
     height: 60vh;
-    margin-top: 15vh;
+    margin-top: 13vh;
     margin-right: 5vw;
     margin-left: 5vw;
     border-radius: 5vw;
@@ -1514,8 +1540,17 @@ h1 {
     width: 98%;
   }
 
+  .inner-table-holder.english {
+    width: 100%;
+  }
+
   .loading-timer {
     width: 30vw;
+  }
+
+  .full-logo {
+    width: 45vw;
+    height: 45vw;
   }
 }
 
