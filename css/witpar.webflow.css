@@ -933,7 +933,7 @@ h1 {
   background-repeat: no-repeat;
 }
 
-.graph-holder {
+.group-graph-holder {
   margin-top: 12.5vh;
   padding-bottom: 2vh;
 }
@@ -1180,7 +1180,7 @@ h1 {
     height: 25vw;
   }
 
-  .graph-holder {
+  .group-graph-holder {
     margin-top: 7.5vh;
   }
 }
@@ -1576,7 +1576,7 @@ h1 {
     height: 60vw;
   }
 
-  .graph-holder {
+  .group-graph-holder {
     margin-top: 5vh;
   }
 }
