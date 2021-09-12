@@ -118,6 +118,11 @@ h1 {
   text-decoration: underline;
 }
 
+.link-block.mobile-menu.portuguese {
+  margin-left: 1vw;
+  text-decoration: underline;
+}
+
 .link-block.english {
   margin-left: 1vw;
   text-decoration: underline;
@@ -964,6 +969,11 @@ h1 {
     margin-left: 2vw;
   }
 
+  .link-block.mobile-menu.portuguese {
+    display: inline-block;
+    margin-left: 2vw;
+  }
+
   .video-holder {
     width: 92vw;
     height: 60vh;
@@ -1199,6 +1209,10 @@ h1 {
   }
 
   .link-block.mobile-menu.english {
+    margin-left: 4vw;
+  }
+
+  .link-block.mobile-menu.portuguese {
     margin-left: 4vw;
   }
 
