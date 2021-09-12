@@ -1,5 +1,5 @@
 <!DOCTYPE html><!--  This site was created in Webflow. http://www.webflow.com  -->
-<!--  Last Published: Sun Sep 12 2021 16:37:27 GMT+0000 (Coordinated Universal Time)  -->
+<!--  Last Published: Sun Sep 12 2021 19:08:03 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="613acb686526227a54226b70" data-wf-site="61375907cb57e1998637003a" lang="en">
 <head>
   <meta charset="utf-8">
@@ -463,127 +463,27 @@
           </div>
         </div>
       </div>
-      <div class="columns w-row">
-        <div class="column w-col w-col-6">
-          <div class="chart-graph w-embed w-script">
-            <style>
-  #canvas {
-    width: 100%;
-  }
-  @media (min-width: 320px) and (max-width: 480px) {
-    .canvasholder {
-      width: 100%;
-      height: 75vh;
-    }
-  }
-</style>
-            <div class="canvasholder">
-              <canvas id="canvas">Canvas is not supported in your browser.</canvas>
-            </div>
-            <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0/dist/Chart.min.js"></script>
-            <script>
-  var xmlhttp = new XMLHttpRequest();
-  var url = "graph.json";
-  xmlhttp.open("GET", url, true);
-  xmlhttp.send();
-  xmlhttp.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) {
-      var data = JSON.parse(this.responseText);
-      //console.log(data);
-      var time = data.returns.map(function(elem) {
-        return elem.time;
-      });
-      var witpar = data.returns.map(function(elem) {
-        return elem.witpar;
-      });
-      var ibov = data.returns.map(function(elem) {
-        return elem.ibov;
-      });
-      var cdi = data.returns.map(function(elem) {
-        return elem.cdi;
-      });
-      var ctx = document.getElementById('canvas');
-      var myChart = new Chart(ctx, {
-        type: 'line',
-        data: {
-          labels: time,
-          datasets: [{
-              label: 'WITPAR',
-              data: witpar,
-              fill: true,
-              backgroundColor: 'rgba(203, 203, 203, 0.1)',
-              borderColor: 'rgba(203, 203, 203, 1)',
-              borderWidth: 2,
-              pointHitRadius: 75,
-              tension: 0.1
-            }
-          ]
-        },
-        options: {
-          responsive: true,
-          maintainAspectRatio: false,
-          tooltips: {
-  					displayColors: false,
-            titleFontSize: 13,
-   				 	bodyFontSize: 13
-					},
-          legend: {
-             labels: {
-                  fontColor: 'rgba(203, 203, 203, 1)',
-                  fontSize: 13
-                 }
-              },
-          scales: {
-            yAxes: [{
-							ticks: {
-                    fontColor: 'rgba(203, 203, 203, 1)',
-                    fontSize: 13
-                },
-              gridLines: {
-                display: true,
-                zeroLineColor: 'rgba(203, 203, 203, 0.25)',
-                lineWidth: 1,
-                color: 'rgba(203, 203, 203, 0.25)'
-              }
-            }],
-            xAxes: [{
-							ticks: {
-                    fontColor: 'rgba(203, 203, 203, 1)',
-                    fontSize: 13
-                },
-              gridLines: {
-                display: true,
-                lineWidth: 1,
-                zeroLineColor: 'rgba(203, 203, 203, 0.25)',
-                color: 'rgba(203, 203, 203, 0.25)'
-              }
-            }]
-          }
-        }
-      });
-    }
-  }
-</script>
-          </div>
-        </div>
-        <div class="column-2 w-col w-col-6">
-          <div class="chart-graph w-embed w-script">
-            <style>
+      <div class="graph-holder">
+        <div class="chart-graph w-embed w-script">
+          <style>
   #canvas2 {
     width: 100%;
   }
+	.canvasholder2 {
+     width: 100%;
+     height: 40vh;
+	}
   @media (min-width: 320px) and (max-width: 480px) {
     .canvasholder2 {
-      width: 100%;
       height: 75vh;
     }
   }
 </style>
-            <div class="canvasholder2">
-              <canvas id="canvas2">Canvas is not supported in your browser.</canvas>
-            </div>
-            <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0/dist/Chart.min.js"></script>
-            <script>
+          <div class="canvasholder2">
+            <canvas id="canvas2">Canvas is not supported in your browser.</canvas>
+          </div>
+          <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0/dist/Chart.min.js"></script>
+          <script>
   var xmlhttp = new XMLHttpRequest();
   var url = "graph.json";
   xmlhttp.open("GET", url, true);
@@ -686,7 +586,6 @@
     }
   }
 </script>
-          </div>
         </div>
       </div>
       <div class="paragraph-text2">*past performances do not guarantee future performances.</div>
