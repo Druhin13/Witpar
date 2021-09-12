@@ -1,66 +1,66 @@
 {"returns":[
     {
-        "time": "NOV 2012",
+        "time": "NOV ‘12",
         "witpar": 0,
         "ibov": 0,
         "cdi": 0
     },
     {
-        "time": "DEC 2012",
+        "time": "‘12",
         "witpar": 14.39,
         "ibov": 2.02,
         "cdi": 1.29
     },
     {
-        "time": "DEC 2013",
+        "time": "‘13",
         "witpar": 31.48,
         "ibov": -13.78,
         "cdi": 9.4
     },
     {
-        "time": "DEC 2014",
+        "time": "‘14",
         "witpar": 29.63,
         "ibov": -16.29,
         "cdi": 20.95
     },
     {
-        "time": "DEC 2015",
+        "time": "‘15",
         "witpar": 30.47,
         "ibov": -27.43,
         "cdi": 36.94
     },
     {
-        "time": "DEC 2016",
+        "time": "‘16",
         "witpar": 71.34,
         "ibov": 0.82,
         "cdi": 56.19
     },
     {
-        "time": "DEC 2017",
+        "time": "‘17",
         "witpar": 138.21,
         "ibov": 27.9,
         "cdi": 71.7
     },
     {
-        "time": "DEC 2018",
+        "time": "‘18",
         "witpar": 143.05,
         "ibov": 47.1,
         "cdi": 83.17
     },
     {
-        "time": "DEC 2019",
+        "time": "‘19",
         "witpar": 228.03,
         "ibov": 93.57,
         "cdi": 93.99
     },
     {
-        "time": "DEC 2020",
+        "time": "‘20",
         "witpar": 193.2,
         "ibov": 99.21,
         "cdi": 99.21
     },
     {
-        "time": "AUG 2021",
+        "time": "AUG ‘21",
         "witpar": 212.71,
         "ibov": 98.82,
         "cdi": 107.22
