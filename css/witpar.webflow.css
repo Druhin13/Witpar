@@ -553,13 +553,13 @@ h1 {
   flex: 0 0 auto;
   border-top: 1px solid #e4e4e4;
   border-bottom: 1px solid #e4e4e4;
-  -webkit-transition: opacity 200ms ease;
-  transition: opacity 200ms ease;
+  -webkit-transition: background-color 250ms ease;
+  transition: background-color 250ms ease;
   text-decoration: none;
 }
 
 .button2:hover {
-  opacity: 0.75;
+  background-color: #1b1b1b;
 }
 
 .lottie-animation2 {
